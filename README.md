@@ -1,4 +1,4 @@
 # week-1_Google
 
-Search Engine made.
-Remains: Bottom bar
+Search Web Page completed.
+Remains: Microphone icon
