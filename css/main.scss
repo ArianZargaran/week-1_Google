@@ -1,21 +1,21 @@
 body {
-  font-family: Roboto, "sans-serif";
-}
+  font-family: Roboto, sans-serif;
 a {
   text-decoration: none;
   color: #000;
+  }
 }
 
 //log-menu
 .log-menu {
-  padding-right: 18px;
   padding-top: 18px;
+  padding-right: 18px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   right: 0;
-width: 240px;
-  line-height: 24px;
+  min-width: 240px;
+  line-height: 28px;
 }
 
 //Gmail && Images
@@ -28,23 +28,24 @@ width: 240px;
 .log-menu__google-apps {
   height: 4px;
   width: 4px;
-  box-shadow: 0px 4px #737373, 6px 4px #737373, 12px 4px #737373,
-              0px 10px #737373, 6px 10px #737373, 12px 10px #737373,
-              0px 16px #737373, 6px 16px #737373, 12px 16px #737373;
+  opacity: .55;
+  box-shadow: 0px 4px, 6px 4px, 12px 4px, 0px 10px, 6px 10px, 12px 10px, 0px 16px, 6px 16px, 12px 16px;
 }
 
 //BELL
 .log-menu__bell-icon {
+    opacity: .55;
 .fa-circle {
   font-size: 24px;
-  padding: 0 2px;
-  color: #737373;
 .fa-bell {
   font-size: 9px;
   position: absolute;
   top: 28%;
   }
 }
+  &:hover {
+    opacity: 1;
+  }
 }
 
 //PICTURE
@@ -56,7 +57,6 @@ width: 240px;
 .wrapper {
   width: 585px;
   text-align: center;
-
   margin: 0 auto;
   padding-top: 188px;
 }
@@ -83,9 +83,13 @@ width: 240px;
   border: none;
   padding: 15px;
   margin-bottom: 21px;
-  box-shadow: 0px 1px 1px 1px rgba(204,204,204,1), 0px 3px 5px 0px rgba(204,204,204,1);
   background-image: url('styling/microphone.png');
   background-size: 24px 24px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  &:focus {outline:0;}
+  &:hover{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25), 0 0 0 1px rgba(0,0,0,0.08) ;
+  }
 }
 
 //SUBMIT BUTTONS
@@ -103,5 +107,38 @@ width: 240px;
     border-radius: 2px;
     margin: 11px 4px;
     text-align: center;
+    cursor: pointer;
+    border: 1px solid #f2f2f2;
+    &:focus {outline:0; border: 1px solid #4285f4; }
+    &:hover{color: #000;border: 1px solid #ccc;box-shadow:0 1px 1px rgba(0,0,0,0.1);}
+    &:active {border: 1px solid #4285f4;}
+    }
   }
-}
+
+
+//FOOTER
+.footer {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  bottom: 0;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  .footer__business, .footer__legal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    }
+  }
+
+.text--link {
+    color: #666;
+    border-bottom: 1px solid transparent;
+    &:hover{
+    border-bottom: 1px solid #666;
+    }
+  }
