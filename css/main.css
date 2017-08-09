@@ -23,11 +23,20 @@ body {
   color: #737373; }
 
 .log-menu__google-apps {
+  text-indent: -99999px;
+  opacity: .55;
   height: 4px;
   width: 4px;
-  opacity: .55;
+  cursor: pointer;
   -webkit-box-shadow: 0px 4px, 6px 4px, 12px 4px, 0px 10px, 6px 10px, 12px 10px, 0px 16px, 6px 16px, 12px 16px;
           box-shadow: 0px 4px, 6px 4px, 12px 4px, 0px 10px, 6px 10px, 12px 10px, 0px 16px, 6px 16px, 12px 16px; }
+  .log-menu__google-apps:hover {
+    opacity: 1; }
+  .log-menu__google-apps .log-menu__google-apps--link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-decoration: none; }
 
 .log-menu__bell-icon {
   opacity: .55; }
@@ -41,7 +50,10 @@ body {
     opacity: 1; }
 
 .log-menu__profile-pic--jpeg {
-  border-radius: 100%; }
+  border-radius: 100%;
+  position: relative;
+  right: 13px;
+  bottom: 5px; }
 
 .wrapper {
   width: 585px;
