@@ -1,4 +1,5 @@
 # week-1_Google
 
-Search Web Page completed.
-Remains: Microphone icon
+Task completed!
+
+![Sample Google Replica Project preview](https://arianzargaran.github.io/week-1_Google/styling/preview.png)
