@@ -1,9 +1,12 @@
+/* line 1, main.scss */
 body {
   font-family: Roboto, sans-serif; }
+  /* line 3, main.scss */
   body a {
     text-decoration: none;
     color: #000; }
 
+/* line 10, main.scss */
 .log-menu {
   padding-top: 18px;
   padding-right: 18px;
@@ -18,10 +21,12 @@ body {
   min-width: 240px;
   line-height: 28px; }
 
+/* line 22, main.scss */
 .log-menu__gmail, .log-menu__images {
   font-size: 13px;
   color: #737373; }
 
+/* line 28, main.scss */
 .log-menu__google-apps {
   text-indent: -99999px;
   opacity: .55;
@@ -30,93 +35,131 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 0px 4px, 6px 4px, 12px 4px, 0px 10px, 6px 10px, 12px 10px, 0px 16px, 6px 16px, 12px 16px;
           box-shadow: 0px 4px, 6px 4px, 12px 4px, 0px 10px, 6px 10px, 12px 10px, 0px 16px, 6px 16px, 12px 16px; }
+  /* line 35, main.scss */
   .log-menu__google-apps:hover {
     opacity: 1; }
+  /* line 38, main.scss */
   .log-menu__google-apps .log-menu__google-apps--link {
     display: block;
     width: 24px;
     height: 24px;
     text-decoration: none; }
 
+/* line 47, main.scss */
 .log-menu__bell-icon {
   opacity: .55; }
+  /* line 49, main.scss */
   .log-menu__bell-icon .fa-circle {
     font-size: 24px; }
+    /* line 51, main.scss */
     .log-menu__bell-icon .fa-circle .fa-bell {
       font-size: 9px;
       position: absolute;
       top: 28%; }
+  /* line 57, main.scss */
   .log-menu__bell-icon:hover {
     opacity: 1; }
 
+/* line 63, main.scss */
 .log-menu__profile-pic--jpeg {
   border-radius: 100%;
   position: relative;
   right: 13px;
   bottom: 5px; }
 
+/* line 71, main.scss */
 .wrapper {
   width: 585px;
   text-align: center;
   margin: 0 auto;
   padding-top: 188px; }
 
+/* line 78, main.scss */
 .wrapper--brand-name {
   font-size: 90px;
   font-weight: lighter;
   letter-spacing: -5px;
   font-family: Futura, sans-serif;
   margin-bottom: 40px; }
+  /* line 84, main.scss */
   .wrapper--brand-name .wrapper--brand-name__G {
     color: #4285f4; }
+  /* line 85, main.scss */
   .wrapper--brand-name .wrapper--brand-name__o {
     color: #ea4335; }
+  /* line 86, main.scss */
   .wrapper--brand-name .wrapper--brand-name__oo {
     color: #fbbc05; }
+  /* line 87, main.scss */
   .wrapper--brand-name .wrapper--brand-name__g {
     color: #4285f4; }
+  /* line 88, main.scss */
   .wrapper--brand-name .wrapper--brand-name__l {
     color: #34a853; }
+  /* line 89, main.scss */
   .wrapper--brand-name .wrapper--brand-name__e {
     color: #ea4335; }
 
+/* line 93, main.scss */
 .search-engine__bar {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   height: 44px;
-  border: none;
-  padding: 0 66px 0 15px;
   margin-bottom: 21px;
-  background-image: url("styling/microphone.png");
   background-size: 24px 24px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-  .search-engine__bar:focus {
-    outline: 0; }
+  /* line 99, main.scss */
   .search-engine__bar:hover {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.08);
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+  /* line 102, main.scss */
+  .search-engine__bar .search-engine__input {
+    border: none;
+    padding: 0 66px 0 15px;
+    height: 100%;
+    width: 75%;
+    position: relative;
+    float: left; }
+    /* line 109, main.scss */
+    .search-engine__bar .search-engine__input:focus {
+      outline: 0; }
+  /* line 111, main.scss */
+  .search-engine__bar .search-engine__bar--micro {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1000px-Google_mic.svg.png);
+    background-size: 18px 25.766355140186917px;
+    background-repeat: no-repeat;
+    background-position: center center; }
 
+/* line 124, main.scss */
 input[type="text"] {
   font-size: 16px; }
 
+/* line 128, main.scss */
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Chrome/Opera/Safari */
+/* line 129, main.scss */
 ::-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 19+ */
+/* line 130, main.scss */
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* IE 10+ */
+/* line 131, main.scss */
 :-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 18- */
+/* line 134, main.scss */
 .search-engine__buttons .submit {
   font-size: 13px;
   font-family: arial, sans-serif;
@@ -132,17 +175,21 @@ input[type="text"] {
   text-align: center;
   cursor: pointer;
   border: 1px solid #f2f2f2; }
+  /* line 149, main.scss */
   .search-engine__buttons .submit:focus {
     outline: 0;
     border: 1px solid #4285f4; }
+  /* line 150, main.scss */
   .search-engine__buttons .submit:hover {
     color: #000;
     border: 1px solid #ccc;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  /* line 151, main.scss */
   .search-engine__buttons .submit:active {
     border: 1px solid #4285f4; }
 
+/* line 157, main.scss */
 .footer {
   position: absolute;
   height: 40px;
@@ -157,6 +204,7 @@ input[type="text"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  /* line 167, main.scss */
   .footer .footer__business, .footer .footer__legal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -168,9 +216,11 @@ input[type="text"] {
             align-items: center;
     min-width: 300px; }
 
+/* line 175, main.scss */
 .text--link {
   color: #666;
   border-bottom: 1px solid transparent; }
+  /* line 178, main.scss */
   .text--link:hover {
     border-bottom: 1px solid #666; }
 

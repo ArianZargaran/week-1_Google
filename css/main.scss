@@ -92,19 +92,34 @@ a {
 //SEARCH BAR
 .search-engine__bar {
   box-sizing: border-box;
-  width: 100%;
   height: 44px;
-  border: none;
-  padding: 0 66px 0 15px;
   margin-bottom: 21px;
-  background-image: url('styling/microphone.png');
   background-size: 24px 24px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-  &:focus {outline:0;}
   &:hover{
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25), 0 0 0 1px rgba(0,0,0,0.08) ;
+        }
+    .search-engine__input {
+        border: none;
+        padding: 0 66px 0 15px;
+        height: 100%;
+        width: 75%;
+      position: relative;
+      float: left;
+     &:focus {outline:0;}
+  }
+  .search-engine__bar--micro {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1000px-Google_mic.svg.png);
+    background-size: 18px 25.766355140186917px;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
+
 //SEARCH BAR--INNER TEXT
 input[type="text"] {
   font-size: 16px;
@@ -115,19 +130,6 @@ input[type="text"] {
 :-ms-input-placeholder {  color: rgba(0,0,0,0.2);}  /* IE 10+ */
 :-moz-placeholder {color: rgba(0,0,0,0.2);}  /* Firefox 18- */
 
-//SEARCH BAR--MICRO
-// .search-engine__bar--micro {
-//   text-indent:-999999px;
-//   position: absolute;
-//   height:100px;
-//   width:100px;
-//   z-index:2;
-//   right: 12px;
-//   bottom: 12px;
-//   background: url("styling/microphone.png");
-// }
-
-//SUBMIT BUTTONS
 .search-engine__buttons {
   .submit {
     font-size: 13px;
