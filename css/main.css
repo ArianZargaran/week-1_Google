@@ -1,6 +1,6 @@
 /* line 1, main.scss */
 body {
-  font-family: Roboto, sans-serif; }
+  font-family: 'Roboto', sans-serif; }
   /* line 3, main.scss */
   body a {
     text-decoration: none;
@@ -130,36 +130,71 @@ body {
     height: 100%;
     position: relative;
     float: right;
-    background-image: url(../styling/google_microphone.png);
+    background-image: url(https://arianzargaran.github.io/week-1_Google/styling/google_microphone.png);
     background-size: 18px 25.766355140186917px;
     background-repeat: no-repeat;
     background-position: center center; }
+    /* line 120, main.scss */
+    .search-engine__bar .search-engine__bar--micro:hover .search-engine__bar--msg {
+      visibility: visible; }
+    /* line 123, main.scss */
+    .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg {
+      visibility: hidden;
+      position: relative;
+      padding: 7px 9px;
+      top: 50px;
+      right: 30px;
+      width: 100px;
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #fff;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+              box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+      /* line 134, main.scss */
+      .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg .search-engine__bar--arrow {
+        bottom: 100%;
+        left: 50%;
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border: 1px solid #fff;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #000;
+        border-width: 6px;
+        margin-left: -6px; }
+    /* line 147, main.scss */
+    .search-engine__bar .search-engine__bar--micro .search-engine__bar--txt {
+      font-family: arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: -.2px;
+      font-weight: 700; }
 
-/* line 124, main.scss */
+/* line 157, main.scss */
 input[type="text"] {
   font-size: 16px; }
 
-/* line 128, main.scss */
+/* line 161, main.scss */
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Chrome/Opera/Safari */
-/* line 129, main.scss */
+/* line 162, main.scss */
 ::-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 19+ */
-/* line 130, main.scss */
+/* line 163, main.scss */
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* IE 10+ */
-/* line 131, main.scss */
+/* line 164, main.scss */
 :-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 18- */
-/* line 134, main.scss */
+/* line 167, main.scss */
 .search-engine__buttons .submit {
   font-size: 13px;
   font-family: arial, sans-serif;
@@ -175,21 +210,21 @@ input[type="text"] {
   text-align: center;
   cursor: pointer;
   border: 1px solid #f2f2f2; }
-  /* line 149, main.scss */
+  /* line 182, main.scss */
   .search-engine__buttons .submit:focus {
     outline: 0;
     border: 1px solid #4285f4; }
-  /* line 150, main.scss */
+  /* line 183, main.scss */
   .search-engine__buttons .submit:hover {
     color: #000;
     border: 1px solid #ccc;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
-  /* line 151, main.scss */
+  /* line 184, main.scss */
   .search-engine__buttons .submit:active {
     border: 1px solid #4285f4; }
 
-/* line 157, main.scss */
+/* line 190, main.scss */
 .footer {
   position: absolute;
   height: 40px;
@@ -204,7 +239,7 @@ input[type="text"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  /* line 167, main.scss */
+  /* line 200, main.scss */
   .footer .footer__business, .footer .footer__legal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,11 +251,11 @@ input[type="text"] {
             align-items: center;
     min-width: 300px; }
 
-/* line 175, main.scss */
+/* line 208, main.scss */
 .text--link {
   color: #666;
   border-bottom: 1px solid transparent; }
-  /* line 178, main.scss */
+  /* line 211, main.scss */
   .text--link:hover {
     border-bottom: 1px solid #666; }
 
