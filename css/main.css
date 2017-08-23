@@ -18,15 +18,24 @@ body {
           justify-content: space-between;
   position: absolute;
   right: 0;
-  min-width: 240px;
+  min-width: 300px;
   line-height: 28px; }
 
-/* line 22, main.scss */
+/* line 20, main.scss */
+.log-menu__text--link {
+  color: #666;
+  padding: 5px 0;
+  border-bottom: 1px solid transparent; }
+  /* line 24, main.scss */
+  .log-menu__text--link:hover span {
+    border-bottom: 1px solid #666; }
+
+/* line 30, main.scss */
 .log-menu__gmail, .log-menu__images {
   font-size: 13px;
   color: #737373; }
 
-/* line 28, main.scss */
+/* line 36, main.scss */
 .log-menu__google-apps {
   text-indent: -99999px;
   opacity: .55;
@@ -35,72 +44,72 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 0px 4px, 6px 4px, 12px 4px, 0px 10px, 6px 10px, 12px 10px, 0px 16px, 6px 16px, 12px 16px;
           box-shadow: 0px 4px, 6px 4px, 12px 4px, 0px 10px, 6px 10px, 12px 10px, 0px 16px, 6px 16px, 12px 16px; }
-  /* line 35, main.scss */
+  /* line 43, main.scss */
   .log-menu__google-apps:hover {
     opacity: 1; }
-  /* line 38, main.scss */
+  /* line 46, main.scss */
   .log-menu__google-apps .log-menu__google-apps--link {
     display: block;
     width: 24px;
     height: 24px;
     text-decoration: none; }
 
-/* line 47, main.scss */
+/* line 55, main.scss */
 .log-menu__bell-icon {
   opacity: .55; }
-  /* line 49, main.scss */
+  /* line 57, main.scss */
   .log-menu__bell-icon .fa-circle {
     font-size: 24px; }
-    /* line 51, main.scss */
+    /* line 59, main.scss */
     .log-menu__bell-icon .fa-circle .fa-bell {
       font-size: 9px;
       position: absolute;
       top: 28%; }
-  /* line 57, main.scss */
+  /* line 65, main.scss */
   .log-menu__bell-icon:hover {
     opacity: 1; }
 
-/* line 63, main.scss */
+/* line 71, main.scss */
 .log-menu__profile-pic--jpeg {
   border-radius: 100%;
   position: relative;
   right: 13px;
   bottom: 5px; }
 
-/* line 71, main.scss */
+/* line 79, main.scss */
 .wrapper {
-  width: 585px;
+  width: 350px;
   text-align: center;
   margin: 0 auto;
   padding-top: 188px; }
 
-/* line 78, main.scss */
+/* line 86, main.scss */
 .wrapper--brand-name {
   font-size: 90px;
   font-weight: lighter;
   letter-spacing: -5px;
   font-family: Futura, sans-serif;
   margin-bottom: 40px; }
-  /* line 84, main.scss */
+  /* line 92, main.scss */
   .wrapper--brand-name .wrapper--brand-name__G {
     color: #4285f4; }
-  /* line 85, main.scss */
+  /* line 93, main.scss */
   .wrapper--brand-name .wrapper--brand-name__o {
     color: #ea4335; }
-  /* line 86, main.scss */
+  /* line 94, main.scss */
   .wrapper--brand-name .wrapper--brand-name__oo {
     color: #fbbc05; }
-  /* line 87, main.scss */
+  /* line 95, main.scss */
   .wrapper--brand-name .wrapper--brand-name__g {
     color: #4285f4; }
-  /* line 88, main.scss */
+  /* line 96, main.scss */
   .wrapper--brand-name .wrapper--brand-name__l {
     color: #34a853; }
-  /* line 89, main.scss */
+  /* line 97, main.scss */
   .wrapper--brand-name .wrapper--brand-name__e {
     color: #ea4335; }
 
-/* line 93, main.scss */
+/* line 101, main.scss */
 .search-engine__bar {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -109,35 +118,32 @@ body {
   background-size: 24px 24px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-  /* line 99, main.scss */
+  /* line 107, main.scss */
   .search-engine__bar:hover {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.08);
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-  /* line 102, main.scss */
+  /* line 110, main.scss */
   .search-engine__bar .search-engine__input {
     border: none;
-    padding: 0 66px 0 15px;
-    height: 100%;
-    width: 75%;
-    position: relative;
+    height: 90%;
+    margin-left: 15px;
     float: left; }
-    /* line 109, main.scss */
+    /* line 115, main.scss */
     .search-engine__bar .search-engine__input:focus {
       outline: 0; }
-  /* line 111, main.scss */
+  /* line 117, main.scss */
   .search-engine__bar .search-engine__bar--micro {
     width: 10%;
     height: 100%;
-    position: relative;
     float: right;
     background-image: url(https://arianzargaran.github.io/week-1_Google/styling/google_microphone.png);
     background-size: 18px 25.766355140186917px;
     background-repeat: no-repeat;
     background-position: center center; }
-    /* line 120, main.scss */
+    /* line 125, main.scss */
     .search-engine__bar .search-engine__bar--micro:hover .search-engine__bar--msg {
       visibility: visible; }
-    /* line 123, main.scss */
+    /* line 128, main.scss */
     .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg {
       visibility: hidden;
       position: relative;
@@ -150,7 +156,7 @@ body {
       border: 1px solid #fff;
       -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
               box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-      /* line 134, main.scss */
+      /* line 139, main.scss */
       .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg .search-engine__bar--arrow {
         bottom: 100%;
         left: 50%;
@@ -163,38 +169,38 @@ body {
         border-bottom-color: #000;
         border-width: 6px;
         margin-left: -6px; }
-    /* line 147, main.scss */
+    /* line 152, main.scss */
     .search-engine__bar .search-engine__bar--micro .search-engine__bar--txt {
       font-family: arial, sans-serif;
       font-size: 12px;
       letter-spacing: -.2px;
       font-weight: 700; }
 
-/* line 157, main.scss */
+/* line 162, main.scss */
 input[type="text"] {
   font-size: 16px; }
 
-/* line 161, main.scss */
+/* line 166, main.scss */
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Chrome/Opera/Safari */
-/* line 162, main.scss */
+/* line 167, main.scss */
 ::-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 19+ */
-/* line 163, main.scss */
+/* line 168, main.scss */
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* IE 10+ */
-/* line 164, main.scss */
+/* line 169, main.scss */
 :-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 18- */
-/* line 167, main.scss */
+/* line 172, main.scss */
 .search-engine__buttons .submit {
   font-size: 13px;
   font-family: arial, sans-serif;
@@ -210,36 +216,37 @@ input[type="text"] {
   text-align: center;
   cursor: pointer;
   border: 1px solid #f2f2f2; }
-  /* line 182, main.scss */
+  /* line 187, main.scss */
   .search-engine__buttons .submit:focus {
     outline: 0;
     border: 1px solid #4285f4; }
-  /* line 183, main.scss */
+  /* line 188, main.scss */
   .search-engine__buttons .submit:hover {
     color: #000;
     border: 1px solid #ccc;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
-  /* line 184, main.scss */
+  /* line 189, main.scss */
   .search-engine__buttons .submit:active {
     border: 1px solid #4285f4; }
 
-/* line 190, main.scss */
+/* line 195, main.scss */
 .footer {
   position: absolute;
-  height: 40px;
   width: 100%;
   background-color: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   bottom: 0;
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 13px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  /* line 200, main.scss */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  /* line 205, main.scss */
   .footer .footer__business, .footer .footer__legal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -251,12 +258,43 @@ input[type="text"] {
             align-items: center;
     min-width: 300px; }
 
-/* line 208, main.scss */
+/* line 213, main.scss */
 .text--link {
   color: #666;
-  border-bottom: 1px solid transparent; }
-  /* line 211, main.scss */
-  .text--link:hover {
+  text-align: center;
+  width: 50px;
+  padding: 10px 20px; }
+  /* line 218, main.scss */
+  .text--link span {
+    border-bottom: 1px solid transparent; }
+  /* line 221, main.scss */
+  .text--link:hover span {
     border-bottom: 1px solid #666; }
+
+/*============
+ MEDIA QUERIES
+==============*/
+@media screen and (min-width: 695.01px) {
+  /* line 231, main.scss */
+  .wrapper {
+    width: 496px; }
+
+  /* line 234, main.scss */
+  .search-engine__input {
+    width: 429px; }
+
+  /* line 237, main.scss */
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+@media screen and (min-width: 864.01px) {
+  /* line 243, main.scss */
+  .wrapper {
+    width: 666px; }
+
+  /* line 246, main.scss */
+  .search-engine__input {
+    width: 85%; } }
 
 /*# sourceMappingURL=main.css.map */
