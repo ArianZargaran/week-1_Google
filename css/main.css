@@ -82,34 +82,42 @@ body {
   text-align: center;
   margin: 0 auto;
   padding-top: 188px; }
+  @media screen and (min-width: 695.01px) {
+    /* line 79, main.scss */
+    .wrapper {
+      width: 496px; } }
+  @media screen and (min-width: 864.01px) {
+    /* line 79, main.scss */
+    .wrapper {
+      width: 666px; } }
 
-/* line 86, main.scss */
+/* line 92, main.scss */
 .wrapper--brand-name {
   font-size: 90px;
   font-weight: lighter;
   letter-spacing: -5px;
   font-family: Futura, sans-serif;
   margin-bottom: 40px; }
-  /* line 92, main.scss */
+  /* line 98, main.scss */
   .wrapper--brand-name .wrapper--brand-name__G {
     color: #4285f4; }
-  /* line 93, main.scss */
+  /* line 99, main.scss */
   .wrapper--brand-name .wrapper--brand-name__o {
     color: #ea4335; }
-  /* line 94, main.scss */
+  /* line 100, main.scss */
   .wrapper--brand-name .wrapper--brand-name__oo {
     color: #fbbc05; }
-  /* line 95, main.scss */
+  /* line 101, main.scss */
   .wrapper--brand-name .wrapper--brand-name__g {
     color: #4285f4; }
-  /* line 96, main.scss */
+  /* line 102, main.scss */
   .wrapper--brand-name .wrapper--brand-name__l {
     color: #34a853; }
-  /* line 97, main.scss */
+  /* line 103, main.scss */
   .wrapper--brand-name .wrapper--brand-name__e {
     color: #ea4335; }
 
-/* line 101, main.scss */
+/* line 107, main.scss */
 .search-engine__bar {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -118,20 +126,28 @@ body {
   background-size: 24px 24px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-  /* line 107, main.scss */
+  /* line 113, main.scss */
   .search-engine__bar:hover {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.08);
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-  /* line 110, main.scss */
+  /* line 116, main.scss */
   .search-engine__bar .search-engine__input {
     border: none;
     height: 90%;
     margin-left: 15px;
     float: left; }
-    /* line 115, main.scss */
+    /* line 121, main.scss */
     .search-engine__bar .search-engine__input:focus {
       outline: 0; }
-  /* line 117, main.scss */
+    @media screen and (min-width: 695.01px) {
+      /* line 116, main.scss */
+      .search-engine__bar .search-engine__input {
+        width: 429px; } }
+    @media screen and (min-width: 864.01px) {
+      /* line 116, main.scss */
+      .search-engine__bar .search-engine__input {
+        width: 85%; } }
+  /* line 129, main.scss */
   .search-engine__bar .search-engine__bar--micro {
     width: 10%;
     height: 100%;
@@ -140,23 +156,37 @@ body {
     background-size: 18px 25.766355140186917px;
     background-repeat: no-repeat;
     background-position: center center; }
-    /* line 125, main.scss */
+    /* line 137, main.scss */
     .search-engine__bar .search-engine__bar--micro:hover .search-engine__bar--msg {
       visibility: visible; }
-    /* line 128, main.scss */
+    /* line 140, main.scss */
     .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg {
       visibility: hidden;
       position: relative;
-      padding: 7px 9px;
+      padding: 5px 0;
       top: 50px;
-      right: 30px;
-      width: 100px;
+      right: 17px;
+      width: 68px;
+      line-height: 15px;
       background-color: #000;
       color: #fff;
       border: 1px solid #fff;
       -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
               box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
-      /* line 139, main.scss */
+      @media screen and (min-width: 695.01px) {
+        /* line 140, main.scss */
+        .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg {
+          right: 36px;
+          padding: 7px 9px;
+          width: 100px; }
+          /* line 156, main.scss */
+          .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg br {
+            display: none; } }
+      @media screen and (min-width: 864.01px) {
+        /* line 140, main.scss */
+        .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg {
+          right: 26px; } }
+      /* line 159, main.scss */
       .search-engine__bar .search-engine__bar--micro .search-engine__bar--msg .search-engine__bar--arrow {
         bottom: 100%;
         left: 50%;
@@ -169,38 +199,42 @@ body {
         border-bottom-color: #000;
         border-width: 6px;
         margin-left: -6px; }
-    /* line 152, main.scss */
+    /* line 173, main.scss */
     .search-engine__bar .search-engine__bar--micro .search-engine__bar--txt {
       font-family: arial, sans-serif;
-      font-size: 12px;
+      font-size: 11px;
       letter-spacing: -.2px;
       font-weight: 700; }
+      @media screen and (min-width: 695.01px) {
+        /* line 173, main.scss */
+        .search-engine__bar .search-engine__bar--micro .search-engine__bar--txt {
+          font-size: 12px; } }
 
-/* line 162, main.scss */
+/* line 186, main.scss */
 input[type="text"] {
   font-size: 16px; }
 
-/* line 166, main.scss */
+/* line 190, main.scss */
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Chrome/Opera/Safari */
-/* line 167, main.scss */
+/* line 191, main.scss */
 ::-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 19+ */
-/* line 168, main.scss */
+/* line 192, main.scss */
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* IE 10+ */
-/* line 169, main.scss */
+/* line 193, main.scss */
 :-moz-placeholder {
   color: rgba(0, 0, 0, 0.2); }
 
 /* Firefox 18- */
-/* line 172, main.scss */
+/* line 196, main.scss */
 .search-engine__buttons .submit {
   font-size: 13px;
   font-family: arial, sans-serif;
@@ -216,21 +250,25 @@ input[type="text"] {
   text-align: center;
   cursor: pointer;
   border: 1px solid #f2f2f2; }
-  /* line 187, main.scss */
+  /* line 211, main.scss */
   .search-engine__buttons .submit:focus {
     outline: 0;
     border: 1px solid #4285f4; }
-  /* line 188, main.scss */
+  /* line 212, main.scss */
   .search-engine__buttons .submit:hover {
     color: #000;
     border: 1px solid #ccc;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
-  /* line 189, main.scss */
+  /* line 213, main.scss */
   .search-engine__buttons .submit:active {
     border: 1px solid #4285f4; }
 
-/* line 195, main.scss */
+/* line 218, main.scss */
+.blueBorder:hover {
+  border: 1px solid #4285f4 !important; }
+
+/* line 224, main.scss */
 .footer {
   position: absolute;
   width: 100%;
@@ -246,7 +284,13 @@ input[type="text"] {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  /* line 205, main.scss */
+  @media screen and (min-width: 695.01px) {
+    /* line 224, main.scss */
+    .footer {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  /* line 237, main.scss */
   .footer .footer__business, .footer .footer__legal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -258,43 +302,17 @@ input[type="text"] {
             align-items: center;
     min-width: 300px; }
 
-/* line 213, main.scss */
+/* line 245, main.scss */
 .text--link {
   color: #666;
   text-align: center;
   width: 50px;
   padding: 10px 20px; }
-  /* line 218, main.scss */
+  /* line 250, main.scss */
   .text--link span {
     border-bottom: 1px solid transparent; }
-  /* line 221, main.scss */
+  /* line 253, main.scss */
   .text--link:hover span {
     border-bottom: 1px solid #666; }
-
-/*============
- MEDIA QUERIES
-==============*/
-@media screen and (min-width: 695.01px) {
-  /* line 231, main.scss */
-  .wrapper {
-    width: 496px; }
-
-  /* line 234, main.scss */
-  .search-engine__input {
-    width: 429px; }
-
-  /* line 237, main.scss */
-  .footer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
-@media screen and (min-width: 864.01px) {
-  /* line 243, main.scss */
-  .wrapper {
-    width: 666px; }
-
-  /* line 246, main.scss */
-  .search-engine__input {
-    width: 85%; } }
 
 /*# sourceMappingURL=main.css.map */

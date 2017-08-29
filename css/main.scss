@@ -81,6 +81,12 @@ a {
   text-align: center;
   margin: 0 auto;
   padding-top: 188px;
+  @media screen and (min-width: 695.01px) {
+     width: 496px;
+    }
+  @media screen and (min-width: 864.01px) {
+      width: 666px;
+      }
 }
 
 .wrapper--brand-name {
@@ -113,6 +119,12 @@ a {
       margin-left: 15px;
       float: left;
      &:focus {outline:0;}
+     @media screen and (min-width: 695.01px) {
+        width: 429px;
+         }
+     @media screen and (min-width: 864.01px) {
+         width: 85%;
+         }
   }
   .search-engine__bar--micro {
     width: 10%;
@@ -128,14 +140,22 @@ a {
     .search-engine__bar--msg {
       visibility: hidden;
       position: relative;
-      padding: 7px 9px;
+      padding: 5px 0;
       top: 50px;
-      right: 30px;
-      width: 100px;
+      right: 17px;
+      width: 68px;
+      line-height: 15px;
       background-color: #000;
       color: #fff;
       border: 1px solid #fff;
-      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08) ;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+      @media screen and (min-width: 695.01px) {
+      right: 36px;
+      padding: 7px 9px;
+      width: 100px;
+      br {display: none;}
+        }
+      @media screen and (min-width: 864.01px) {right: 26px;}
       .search-engine__bar--arrow {
         bottom: 100%;
         left: 50%;
@@ -148,12 +168,16 @@ a {
         border-bottom-color: #000;
         border-width: 6px;
         margin-left: -6px;
-      }   }
+      }
+    }
       .search-engine__bar--txt {
         font-family: arial, sans-serif;
-        font-size: 12px;
+        font-size: 11px;
         letter-spacing: -.2px;
         font-weight: 700;
+        @media screen and (min-width: 695.01px) {
+        font-size: 12px;
+          }
         }
   }
 }
@@ -189,7 +213,12 @@ input[type="text"] {
     &:active {border: 1px solid #4285f4;}
     }
   }
-
+  // JS event on .submit
+.blueBorder {
+  &:hover{
+    border: 1px solid #4285f4 !important;
+  }
+}
 
 //FOOTER
 .footer {
@@ -202,6 +231,9 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  @media screen and (min-width: 695.01px) {
+     justify-content: space-between;
+      }
   .footer__business, .footer__legal {
     display: flex;
     justify-content: space-around;
@@ -222,28 +254,3 @@ input[type="text"] {
       border-bottom: 1px solid #666;
     }
   }
-  
-/*============
- MEDIA QUERIES
-==============*/
-
-@media screen and (min-width: 695.01px) {
- .wrapper {
-   width: 496px;
-  }
- .search-engine__input {
-   width: 429px;
-    }
-  .footer {
-   justify-content: space-between;
-    }
-  }
-
-@media screen and (min-width: 864.01px) {
-  .wrapper {
-      width: 666px;
-  }
-  .search-engine__input {
-      width: 85%;
-  }
-}
